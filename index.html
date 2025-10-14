@@ -559,12 +559,10 @@
         </li>
       </ul>
 
-      <ul class="list list-error">
+      <ul class="list list-error visible">
         <li class="list-group">
           <div class="content warning">
-            <p>
-              Самые распространённые проблемы при регистрации Мой ID
-            </p>
+            <p>Самые распространённые проблемы при регистрации Мой ID</p>
           </div>
           <img
             class="list-img icon"
@@ -573,12 +571,28 @@
           />
         </li>
 
-        <img
-            class="list-img"
-            src="./images/underConstruction.svg"
-            alt="Иконка проектируется"
-          />
-
+        <li class="list-group">
+          <div class="err nodata">
+            <h3 class="err__title">
+              Согласие на обработку биометрических персональных данных
+            </h3>
+            <div class="err__decor">
+              <p>Возникла ошибка при регистрации согласия.</p>
+              <p>Пожалуйста, убедитесь, что:</p>
+              <ul class="err__list-decor">
+                <li class="err__item-decor">все поля заполнены корректно</li>
+                <li class="err__item-decor">ваша учётная запись имеет уровень "полная"</li>
+                <li class="err__item-decor">
+                  в личном кабинете на mos.ru в разделе "Семья и дети"
+                  подтвержено родство с вашим ребенком или подопечным
+                </li class="err__item-decor">
+                <li class="err__item-decor">в учётной записи ребенка или подопечного указан СНИЛС</li>
+                <li class="err__item-decor">ваше интернет-соединение стабильно</li>
+              </ul>
+              <p>И повторите попытку</p>
+            </div>
+          </div>
+        </li>
       </ul>
     </main>
     <script src="./js/main.js"></script>
