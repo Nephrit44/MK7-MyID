@@ -136,6 +136,10 @@ body {
   background-image: url(../images/apple-logo.svg);
 }
 
+.help-icon::before {
+  background-image: url(../images/help.svg);
+}
+
 .main {
   display: flex;
   justify-content: space-between;
