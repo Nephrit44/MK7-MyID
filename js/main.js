@@ -9,6 +9,8 @@ const listError = document.querySelector('.list-error');
 const counterApple = document.querySelectorAll('.counter-apple');
 const counterAndroid = document.querySelectorAll('.counter-android');
 
+const errButton = document.querySelectorAll('.button');
+const errListCollection = document.querySelectorAll('.list');
 
 btnApple.addEventListener('click', function () {
     listApple.classList.toggle('visible');
@@ -37,4 +39,19 @@ function generateCounter (listCollection){
         element.textContent = i;
         i++;
     });
+}
+
+//Обработка нажатия кнопок ОШИБКИ
+errButton.forEach(element => {
+    element.addEventListener('click', function(){
+        showErrorInstruction(element.getAttribute('data-errorItem'));
+    })
+})
+
+function showErrorInstruction (dataID){
+    errListCollection.forEach(element => {
+        if(element.getAttribute('data-errorItem') == dataID){
+            element.classList.toggle('visible');
+        }
+    })
 }

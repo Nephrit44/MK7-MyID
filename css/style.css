@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 540px;
   margin: 0 auto;
 }
 
@@ -104,6 +104,7 @@ body {
   width: 100%;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .choise-item::before {
@@ -153,7 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  max-width: 540px;
+  width: 100%;
 }
 
 .list-group {
@@ -168,7 +169,8 @@ body {
 }
 
 .counter-apple,
-.counter-android {
+.counter-android,
+.counter-error {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -197,7 +199,6 @@ body {
 .image {
   display: flex;
   max-width: 100%;
-  align-self: center;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -240,6 +241,15 @@ body {
   background-color: #fff;
   padding: 10px;
 }
+
+.list-error {
+  margin-top: 10px;
+}
+
+.error__item {
+  padding: 0;
+}
+
 .err__title {
   font-family: arial;
   font-size: 36px;
@@ -264,5 +274,14 @@ body {
   list-style: disc;
 }
 
-@media (min-width: 1100px) {
+.button {
+  font-family: var(--mainFont);
+  font-size: 18px;
+  border: none;
+  padding: 20px 24px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
 }
+
+@media (min-width: 1100px) {}
