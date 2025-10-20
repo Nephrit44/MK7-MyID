@@ -44,6 +44,7 @@ function generateCounter (listCollection){
 //Обработка нажатия кнопок ОШИБКИ
 errButton.forEach(element => {
     element.addEventListener('click', function(e){
+        closeErrorInstruction();
         showErrorInstruction(element.getAttribute('data-errorItem'));
     })
 })
@@ -54,4 +55,10 @@ function showErrorInstruction (dataID){
             element.classList.toggle('visible');
         }
     })
+}
+
+function closeErrorInstruction(){
+    errListCollection.forEach(element => {
+        element.classList.add('visible');
+    })    
 }
