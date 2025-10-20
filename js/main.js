@@ -43,7 +43,7 @@ function generateCounter (listCollection){
 
 //Обработка нажатия кнопок ОШИБКИ
 errButton.forEach(element => {
-    element.addEventListener('click', function(){
+    element.addEventListener('click', function(e){
         showErrorInstruction(element.getAttribute('data-errorItem'));
     })
 })

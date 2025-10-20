@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -28,6 +27,10 @@
           <p class="counter-error">1</p>
           <button class="button" type="button" data-errorItem="1">Ошибка: Обработка биометрических персональных
             данных.</button>
+        </li>
+        <li class="list-group error__item">
+          <p class="counter-error">2</p>
+          <button class="button" type="button" data-errorItem="2">Ошибка: 500</button>
         </li>
       </ul>
     </ul>
@@ -427,11 +430,11 @@
 
     <ul class="list visible" data-errorItem="1">
       <li class="list-group">
-        <div class="err nodata">
+        <div class="err err-nodata">
           <h3 class="err__title">
             Согласие на обработку биометрических персональных данных
           </h3>
-          <div class="err__decor">
+          <div class="err__decor-nodata">
             <p>Возникла ошибка при регистрации согласия.</p>
             <p>Пожалуйста, убедитесь, что:</p>
             <ul class="err__list-decor">
@@ -636,6 +639,45 @@
         <p>Сохраните введённые вами даные, нажав на кнопку сохранить.</p>
         <p>Внимательно проверьте поставленные вами галочки.</p>
         <img class="list-img image" src="./images/helpme/013.webp" alt="Скриншот с сайта мэра." />
+      </li>
+    </ul>
+
+    <!--ОШИБКА 500-->
+    <ul class="list visible" data-errorItem="2">
+      <li class="list-group">
+        <div class="err err500">
+          <h3 class="err__title">
+            500
+          </h3>
+          <p>Страница недоступна</p>
+          <p class="err__subtitle">По какой-то причине мы не можем сейчас отобразить эту страницу.</p>
+          <img class="imgErr500" src="./images/helpme/err500.webp" alt="Картинка ошибки 500 с сайта mos.ru">
+        </div>
+      </li>
+      <li class="list-group">
+        <p>Этот вид ошибки возникает при попытке выдать разрешение на полчение биометри.</p>
+        <p>Означает, что сервер не смог выполнить ваш запрос.</p>
+        <ul class="sub-list">
+          <li>Ошибки в коде приложения (синтаксические ошибки, логические сбои).</li>
+          <li>Проблемы с базой данных — сервер не может подключиться к базе данных или выполнить запрос к ней.</li>
+          <li>Неправильные настройки сервера — ошибки в конфигурационных файлах сервера (например, .htaccess для Apache
+            или nginx.conf для Nginx).</li>
+          <li>Недостаток ресурсов сервера — если владелец сайта делит сервер с другими пользователями, из-за большого
+            числа запросов сервер может оказаться перегружен.</li>
+          <li>Проблемы с обновлениями — после обновления CMS, плагинов или серверного ПО могут возникнуть конфликты или
+            ошибки.</li>
+          <li>Скрипты работают слишком медленно — если скрипт не успел исполниться в определённый промежуток времени,
+            система выдаёт ошибку.</li>
+        </ul>
+        <p>Замечено, что чаще всего от этой ошибки страдают владельцы iPhone</p>
+      </li>
+      <li class="list-group">
+        <p>1. Неообходимо проверить наличие интернета</p>
+        <p>2. Проверить не включен ли VPN</p>
+        <p>3. Проверить какой регион выбран в настройках. Зарубежные сервисы блокируют доступ к государственным сайтам
+          России.</p>
+        <p>4. Воспользоваться браузером, который поддерживает российские сервисы. Yandex-браузер</p>
+        <p>5. Воспользоваться ноутбуком или компьютером.</p>
       </li>
     </ul>
 

@@ -234,7 +234,7 @@ body {
 }
 
 /*Блок: Сообщение о неполных данных*/
-.nodata {
+.err-nodata {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -256,7 +256,7 @@ body {
   font-weight: 600;
 }
 
-.err__decor {
+.err__decor-nodata {
   background-color: #ffdfd8;
   padding: 25px;
   font-family: arial;
@@ -266,12 +266,40 @@ body {
   line-height: 1.5;
 }
 
+.err500 {
+  padding: 20px;
+  background-color: var(--colorWhite);
+  border-radius: 10px;
+}
+
 .err__list-decor {
   padding-left: 55px;
 }
 
 .err__item-decor {
   list-style: disc;
+}
+
+.imgErr500 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.err__subtitle {
+  margin: 50px 0;
+}
+
+.sub-list {
+  margin: 10px 10px 10px 20px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.sub-list > li {
+  padding: 5px 0;
 }
 
 .button {
