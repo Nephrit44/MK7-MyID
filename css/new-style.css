@@ -1,0 +1,64 @@
+body {
+    transition: .3s;
+}
+
+.card__title {
+    background-color: #ebebeb;
+    padding: 20px 65px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #092433;
+}
+
+.card__title::before {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.android-icon::before {
+  background-image: url(../images/android-original-logo.svg);
+}
+
+.card__title::after {
+    content: "+";
+    background-color: #092433;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.card__item {
+    padding: 10px;
+    margin: 0;
+    transition: .3s;
+}
+
+.card {
+    width: 100%;
+    color: #092433;
+}
+
+.card[open]>.card__title::after {
+    content: "-";
+}
+
+.content__text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+}

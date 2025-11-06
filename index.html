@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="./css/new-style.css">
   <link rel="stylesheet" href="./css/style.css" />
   <title>МК7: Инструкция по созданию записи Мой ID</title>
 </head>
@@ -18,464 +19,415 @@
       <h1 class="header_title">Медицинский колледж №7</h1>
       <h2 class="header_subtitle">Инструкция по созданию записи Мой ID</h2>
     </div>
-    <ul class="choise-list">
-      <li class="choise-item android-icon">Android</li>
-      <li class="choise-item ios-icon">iOS</li>
-      <li class="choise-item help-icon">Help me</li>
-      <ul class="list list-error visible">
-        <li class="list-group error__item">
-          <p class="counter-error">1</p>
-          <button class="button" type="button" data-errorItem="1">Ошибка: Обработка биометрических персональных
-            данных.</button>
-        </li>
-        <li class="list-group error__item">
-          <p class="counter-error">2</p>
-          <button class="button" type="button" data-errorItem="2">Ошибка: 500</button>
-        </li>
-      </ul>
-    </ul>
   </header>
 
   <main class="main container">
 
-    <ul class="list list-iphone visible">
-      <li class="list-group">
-        <div class="content warning">
-          <p>ВАЖНО!</p>
-          <p>
-            Проверить, что на телефоне выбран регион "Россия". В противном
-            случае приложение не найдётся.
-          </p>
-        </div>
+    <!--Android-->
+    <details class="card">
+      <summary class="card__title android-icon">Android</summary>
+
+      <div class="record warning">
+        <span class="record__id">запись: #1</span>
+        <p>Внимание!</p>
+        <p>
+          Приложение "Мой id" - не возможно найти в магазине Google play.
+        </p>
+        <img class="list-img icon" src="./images/google-play-icon-logo.svg"
+          alt="Иконка магазина приложений Google play. Перечёркнутая." />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #2</span>
+        <p>Приложение находится в магазине RuStore.</p>
+        <p>
+          Скачать его можно здесь:
+          <a href="http://rustore.ru">rustore.ru</a>
+        </p>
+        <img class="list-img icon" src="./images/rustore-sign-logo.svg" alt="Иконка магазина приложений rustore" />
+        <span class="commentText">
+          (Регистрация для скачивания программ не требуется. Если программа
+          попросит - игнорируйте)</span>
+        <ol>
+          <li>1. Выбрать раздел: <span class="accentText">"Приложения"</span></li>
+          <li>2. В строке поиска набрать: <span class="accentText">мой id</span></li>
+          <li>3. Установить приложение, как на картинке ниже.</span></li>
+        </ol>
+        <img class="list-img image" src="./images/android/001.jpg" alt="Снимок экрана телефона RuStore" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #3</span>
+        <p>После установки запустить приложение.</p>
+        <p>
+          Нажмите <span class="accentText">"Войти с MOS ID"</span> и
+          используйте свой личный логин и пароль от портала mos.ru
+          <span class="commentText">(Этот же пароль вы используте для входа в дневник)</span>
+        </p>
+        <img class="list-img image" src="./images/android/007.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #4</span>
+        <p>На первом экране, после запуска прилоежния, необходимо перемстить
+          ползунок СНИЛС, Карта москвича вправо и нажать кнопку сохранить.
+          <span class="commentText">Дополнительно ничего выбирать нет необходимости, но если выбрали
+            - оставьте.</span>
+        </p>
+
+        <img class="list-img image" src="./images/android/002.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #5</span>
+        <p>Программа предложит вам установить 4х значный пин код для входа в
+          приложение.
+          <span class="commentText">Вы можете установить, а можете пропустить. Это считается
+            дополнительной защитой.</span>
+        </p>
+
+        <img class="list-img image" src="./images/android/012.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #6</span>
+        <p>Поссле ввода пинкода, программа автоматически перебросит вас на
+          главный экран.
+        </p>
+        <p>
+          Необходимо нажать на кнопку
+          <span class="accentText">"Биометрия"</span>
+        </p>
+        <img class="list-img image" src="./images/android/003.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #7</span>
+        <p>
+          Вас перебросит на следующее окно, где нужно нажать кнопку
+          <span class="accentText">"Управление биометрией"</span>
+        </p>
+        <img class="list-img image" src="./images/android/004.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #8</span>
+        <p>Потребуется повторная авторизация на портале mos.ru
+          <span class="commentText">(Этот же пароль вы используте для входа в дневник)</span>
+        </p>
+        <img class="list-img image" src="./images/android/008.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #9</span>
+        <p>
+          Если вам нет 18 - система выведет сообщение, что необходмо
+          подтверждение родителя или законного предстиавителя.
+        </p>
+        <p>
+          Под текстом будет ссылка, нажмите на неё и удерживайте палец на
+          экране несколько секунд.
+        </p>
+        <p>
+          В выпадающем списке нажмите поделиться и отправьте ссылку
+          родителю.
+        </p>
+        <p>Родитель должен подтвердить.</p>
+        <img class="list-img image" src="./images/Confirm.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #10</span>
+        <p>После подтверждения родителем, вернитесь на главный экран.</p>
+        <p>Воспользуйтесь кнопкой "Готово" или стрелочкой назад.</p>
+        <img class="list-img image" src="" alt="" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #11</span>
+        <p>
+          Повторно нажмите на кнопку
+          <span class="accentText">"Биометрия"</span>
+        </p>
+        <p>Далее <span class="accentText">"Управление биометрией"</span></p>
+        <p>
+          Снова пройдите авторизацию с помощью своего личного логина и
+          пароля от портала mos.ru
+          <span class="commentText">(Этот же пароль вы используте для входа в дневник)</span>
+        </p>
+        <img class="list-img image" src="./images/android/003.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #12</span>
+        <p>Теперь вы окажетесь на страничке с регистрацией биометрии.</p>
+        <p>
+          На снимке ниже, пример, того, как должен выглядить конечный
+          результа, в вашем случае будет надпись
+          <span class="accentText">"Не зарегистрировано"</span>
+        </p>
+        <p>Нажмите кнопку зарегистрировать.</p>
+        <img class="list-img image" src="./images/android/005.jpg" alt="Снимок экрана телефона приложение Мой id " />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #13</span>
+        <p>Откроется окно в котором вы должны сделать своё селфи.</p>
+        <img class="list-img image" src="./images/android/006.jpg" alt="Снимок экрана телефона приложение Мой id " />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #14</span>
+        <p>
+          После регистрации вашей фотографии у вас должно получиться вот
+          такой результат.
+        </p>
+        <img class="list-img image" src="./images/android/005.jpg" alt="Снимок экрана телефона приложение Мой id " />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #15</span>
+        <h3 class="thanks">
+          Выражаю вам большую благодарность за проделанную работу и ваше
+          терпение.<br />Спасибо.
+        </h3>
+      </div>
+
+    </details>
+
+    <!--iphone-->
+    <details class="card">
+      <summary class="card__title ios-icon">iPhone</summary>
+
+      <div class="record warning">
+        <span class="record__id">запись: #1</span>
+        <p>ВАЖНО!</p>
+        <p>
+          Проверить, что на телефоне выбран регион "Россия". В противном
+          случае приложение не найдётся.
+        </p>
         <img class="list-img icon" src="./images/apple-settings.svg" alt="Иконка настроек в телефоне Apple" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>Войдите в магазин приложений App store</p>
-          <p>
-            В строке поиска набрать <span class="accentText">"Мой id"</span>
-          </p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #2</span>
+        <p>Войдите в магазин приложений App store</p>
+        <p>
+          В строке поиска набрать <span class="accentText">"Мой id"</span>
           <span class="commentText">
             (Текст частично на русском, частично на английском. Большие буквы
             в ID недопустимы.)</span>
-        </div>
+        </p>
         <p>Установите приложение</p>
         <img class="list-img image" src="./images/apple/001.jpg" alt="Снимок магазина приложение app store" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>После установки запустить приложение.</p>
-          <p>
-            Нажмите <span class="accentText">"Войти с MOS ID"</span> и
-            используйте свой личный логин и пароль от портала mos.ru
-          </p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #3</span>
+        <p>После установки запустить приложение.</p>
+        <p>
+          Нажмите <span class="accentText">"Войти с MOS ID"</span> и
+          используйте свой личный логин и пароль от портала mos.ru
           <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
-        </div>
+        </p>
         <img class="list-img image" src="./images/apple/002.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            На следующем этапе программа предложит вам установить 4х значный
-            пин код для входа в приложение.
-          </p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #4</span>
+        <p>
+          На следующем этапе программа предложит вам установить 4х значный
+          пин код для входа в приложение.
           <span class="commentText">Вы можете установить, а можете пропустить. Это считается
             дополнительной защитой.</span>
-        </div>
+        </p>
         <img class="list-img image" src="./images/apple/003.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            На первом экране, после запуска прилоежния, необходимо перемстить
-            ползунок СНИЛС вправо и нажать кнопку сохранить.
-          </p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #5</span>
+        <p>
+          На первом экране, после запуска прилоежния, необходимо перемстить
+          ползунок СНИЛС вправо и нажать кнопку сохранить.
           <span class="commentText">Дополнительно ничего выбирать нет необходимости, но если выбрали
             - оставьте.</span>
-        </div>
+        </p>
         <img class="list-img image" src="./images/apple/004.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>Автоматически вас перебросит на главный экран.</p>
-          <p>
-            Необходимо нажать на кнопку
-            <span class="accentText">"Биометрия"</span>
-          </p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #6</span>
+        <p>Автоматически вас перебросит на главный экран.</p>
+        <p>
+          Необходимо нажать на кнопку
+          <span class="accentText">"Биометрия"</span>
+        </p>
         <img class="list-img image" src="./images/apple/010.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            В этом окне нажать кнопку
-            <span class="accentText">"Управление биометрией"</span>
-          </p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #7</span>
+        <p>
+          В этом окне нажать кнопку
+          <span class="accentText">"Управление биометрией"</span>
+        </p>
         <img class="list-img image" src="./images/apple/005.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>Выполните повторную авторизацию на портале mos.ru</p>
-        </div>
-        <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #8</span>
+        <p>Выполните повторную авторизацию на портале mos.ru
+          <span class="commentText">(Этот же пароль вы используте для входа в дневник)</span>
+        </p>
         <img class="list-img image" src="./images/apple/006.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            Если вам нет 18 - система выведет сообщение, что необходмо
-            подтверждение родителя или законного предстиавителя.
-          </p>
-          <p>
-            Под текстом будет ссылка, нажмите на неё и удерживайте палец на
-            экране несколько секунд.
-          </p>
-          <p>
-            В выпадающем списке нажмите поделиться и отправьте ссылку
-            родителю.
-          </p>
-          <p>Родитель должен подтвердить.</p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #9</span>
+        <p>
+          Если вам нет 18 - система выведет сообщение, что необходмо
+          подтверждение родителя или законного предстиавителя.
+        </p>
+        <p>
+          Под текстом будет ссылка, нажмите на неё и удерживайте палец на
+          экране несколько секунд.
+        </p>
+        <p>
+          В выпадающем списке нажмите поделиться и отправьте ссылку
+          родителю.
+        </p>
+        <p>Родитель должен подтвердить.</p>
         <img class="list-img image" src="./images/Confirm.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>После подтверждения родителем, вернитесь на главный экран.</p>
-          <p>Воспользуйтесь кнопкой "Готово" или стрелочкой назад.</p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #10</span>
+        <p>После подтверждения родителем, вернитесь на главный экран.</p>
+        <p>Воспользуйтесь кнопкой "Готово" или стрелочкой назад.</p>
         <img class="list-img image" src="" alt="" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            Повторно нажмите на кнопку
-            <span class="accentText">"Биометрия"</span>
-          </p>
-          <p>Далее <span class="accentText">"Управление биометрией"</span></p>
-          <p>
-            Снова пройдите авторизацию с помощью своего личного логина и
-            пароля от портала mos.ru
-          </p>
-          <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #11</span>
+        <p>
+          Повторно нажмите на кнопку
+          <span class="accentText">"Биометрия"</span>
+        </p>
+        <p>Далее <span class="accentText">"Управление биометрией"</span></p>
+        <p>
+          Снова пройдите авторизацию с помощью своего личного логина и
+          пароля от портала mos.ru
+          <span class="commentText">(Этот же пароль вы используте для входа в дневник)</span>
+        </p>
         <img class="list-img image" src="./images/apple/005.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>Теперь вы окажетесь на страничке с регистрацией биометрии.</p>
-          <p>
-            На снимке ниже, пример, того, как должен выглядить конечный
-            результа, в вашем случае будет надпись
-            <span class="accentText">"Не зарегистрировано"</span>
-          </p>
-          <p>Нажмите кнопку зарегистрировать.</p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #12</span>
+        <p>Теперь вы окажетесь на страничке с регистрацией биометрии.</p>
+        <p>
+          На снимке ниже, пример, того, как должен выглядить конечный
+          результа, в вашем случае будет надпись
+          <span class="accentText">"Не зарегистрировано"</span>
+        </p>
+        <p>Нажмите кнопку зарегистрировать.</p>
         <img class="list-img image" src="./images/apple/007.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            Откроется окно в котором система попросит вас предоставить доступ
-            к вашей камере. <span class="accentText">Разрешите.</span>
-          </p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #12</span>
+        <p>
+          Откроется окно в котором система попросит вас предоставить доступ
+          к вашей камере. <span class="accentText">Разрешите.</span>
+        </p>
         <img class="list-img image" src="./images/apple/008.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>Откроется окно в котором вы должны сделать своё селфи.</p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #13</span>
+        <p>Откроется окно в котором вы должны сделать своё селфи.</p>
         <img class="list-img image" src="./images/apple/009.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <p class="counter-apple"></p>
-        <div class="content">
-          <p>
-            После регистрации вашей фотографии у вас должно получиться вот
-            такой результат.
-          </p>
-        </div>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #14</span>
+        <p>
+          После регистрации вашей фотографии у вас должно получиться вот
+          такой результат.
+        </p>
         <img class="list-img image" src="./images/apple/007.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group visible">
-        <p class="counter-apple"></p>
-        <div class="content">
-          Последний пункт. <br />
-          Пожалуйста, отправьте скриншот
-          <span class="commentText">(Пример снизу)</span> на почту
-          SolovevIV5@edu.mos.ru или в сферум найдите меня, как Соловьве Игорь
-          Вячеславович и отправьте в личку.
-        </div>
-        <img class="list-img image" src="./images/apple/005.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #15</span>
         <h3 class="thanks">
           Выражаю вам большую благодарность за проделанную работу и ваше
           терпение.<br />Спасибо.
         </h3>
-      </li>
-    </ul>
+      </div>
 
-    <ul class="list list-android visible">
-      <li class="list-group">
-        <div class="content warning">
-          <p>Внимание!</p>
-          <p>
-            Приложение "Мой id" - не возможно найти в магазине Google play.
-          </p>
-        </div>
-        <img class="list-img icon" src="./images/google-play-icon-logo.svg"
-          alt="Иконка магазина приложений Google play. Перечёркнутая." />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>Приложение находится в магазине RuStore.</p>
-          <p>
-            Скачать его можно здесь:
-            <a href="http://rustore.ru">rustore.ru</a>
-          </p>
-          <img class="list-img icon" src="./images/rustore-sign-logo.svg" alt="Иконка магазина приложений rustore" />
-          <span class="commentText">
-            (Регистрация для скачивания программ не требуется. Если программа
-            попросит - не регистрироваться)</span>
-          <p>
-            1. Выбрать раздел: <span class="accentText">"Приложения"</span>
-          </p>
-          <p>
-            2. В строке поиска набрать: <span class="accentText">мой id</span>
-          </p>
-          <p>3. Установить приложение, как на картинке ниже.</p>
-        </div>
-        <img class="list-img image" src="./images/android/001.jpg" alt="Снимок экрана телефона RuStore" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>После установки запустить приложение.</p>
-          <p>
-            Нажмите <span class="accentText">"Войти с MOS ID"</span> и
-            используйте свой личный логин и пароль от портала mos.ru
-          </p>
-          <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
-        </div>
-        <img class="list-img image" src="./images/android/007.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            На первом экране, после запуска прилоежния, необходимо перемстить
-            ползунок СНИЛС вправо и нажать кнопку сохранить.
-          </p>
-          <span class="commentText">Дополнительно ничего выбирать нет необходимости, но если выбрали
-            - оставьте.</span>
-        </div>
-        <img class="list-img image" src="./images/android/002.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
+    </details>
 
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            Программа предложит вам установить 4х значный пин код для входа в
-            приложение.
-          </p>
-          <span class="commentText">Вы можете установить, а можете пропустить. Это считается
-            дополнительной защитой.</span>
-        </div>
-        <img class="list-img image" src="./images/android/012.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
+    <!--Ошибка данные-->
+    <details class="card">
+      <summary class="card__title error-icon">Типовая ошибка: не все данные</summary>
 
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            Поссле ввода пинкода, программа автоматически перебросит вас на
-            главный экран.
-          </p>
-          <p>
-            Необходимо нажать на кнопку
-            <span class="accentText">"Биометрия"</span>
-          </p>
-        </div>
-        <img class="list-img image" src="./images/android/003.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            Вас перебросит на следующее окно, где нужно нажать кнопку
-            <span class="accentText">"Управление биометрией"</span>
-          </p>
-        </div>
-        <img class="list-img image" src="./images/android/004.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>Потребуется повторная авторизация на портале mos.ru</p>
-        </div>
-        <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
-        <img class="list-img image" src="./images/android/008.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            Если вам нет 18 - система выведет сообщение, что необходмо
-            подтверждение родителя или законного предстиавителя.
-          </p>
-          <p>
-            Под текстом будет ссылка, нажмите на неё и удерживайте палец на
-            экране несколько секунд.
-          </p>
-          <p>
-            В выпадающем списке нажмите поделиться и отправьте ссылку
-            родителю.
-          </p>
-          <p>Родитель должен подтвердить.</p>
-        </div>
-        <img class="list-img image" src="./images/Confirm.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>После подтверждения родителем, вернитесь на главный экран.</p>
-          <p>Воспользуйтесь кнопкой "Готово" или стрелочкой назад.</p>
-        </div>
-        <img class="list-img image" src="" alt="" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            Повторно нажмите на кнопку
-            <span class="accentText">"Биометрия"</span>
-          </p>
-          <p>Далее <span class="accentText">"Управление биометрией"</span></p>
-          <p>
-            Снова пройдите авторизацию с помощью своего личного логина и
-            пароля от портала mos.ru
-          </p>
-          <span class="commentText">Этот же пароль вы используте для входа в дневник</span>
-        </div>
-        <img class="list-img image" src="./images/android/003.jpg" alt="Снимок экрана телефона приложение Мой id" />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>Теперь вы окажетесь на страничке с регистрацией биометрии.</p>
-          <p>
-            На снимке ниже, пример, того, как должен выглядить конечный
-            результа, в вашем случае будет надпись
-            <span class="accentText">"Не зарегистрировано"</span>
-          </p>
-          <p>Нажмите кнопку зарегистрировать.</p>
-        </div>
-        <img class="list-img image" src="./images/android/005.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>Откроется окно в котором вы должны сделать своё селфи.</p>
-        </div>
-        <img class="list-img image" src="./images/android/006.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>
-            После регистрации вашей фотографии у вас должно получиться вот
-            такой результат.
-          </p>
-        </div>
-        <img class="list-img image" src="./images/android/005.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group visible">
-        <p class="counter-android"></p>
-        <div class="content">
-          <p>Последний пункт.</p>
-          <p>Пожалуйста, отправьте скриншот.</p>
-          <p>
-            <span class="commentText">(Пример снизу)</span> на почту
-            <a href="mailto:SolovevIV5@edu.mos.ru">SolovevIV5@edu.mos.ru</a>
-            или в сферум, найдите меня, как Соловьве Игорь Вячеславович и
-            отправьте в личку.
-          </p>
-        </div>
-        <img class="list-img image" src="./images/android/011.jpg" alt="Снимок экрана телефона приложение Мой id " />
-      </li>
-      <li class="list-group">
-        <h3 class="thanks">
-          Выражаю вам большую благодарность за проделанную работу и ваше
-          терпение.<br />Спасибо.
+      <div class="record warning">
+        <span class="record__id">запись: #1</span>
+        <h3 class="err__title">
+          Согласие на обработку биометрических персональных данных
         </h3>
-      </li>
-    </ul>
-
-    <ul class="list visible" data-errorItem="1">
-      <li class="list-group">
-        <div class="err err-nodata">
-          <h3 class="err__title">
-            Согласие на обработку биометрических персональных данных
-          </h3>
-          <div class="err__decor-nodata">
-            <p>Возникла ошибка при регистрации согласия.</p>
-            <p>Пожалуйста, убедитесь, что:</p>
-            <ul class="err__list-decor">
-              <li class="err__item-decor">все поля заполнены корректно</li>
-              <li class="err__item-decor">
-                ваша учётная запись имеет уровень "полная"
-              </li>
-              <li class="err__item-decor">
-                в личном кабинете на mos.ru в разделе "Семья и дети"
-                подтвержено родство с вашим ребенком или подопечным
-              </li>
-              <li class="err__item-decor">
-                в учётной записи ребенка или подопечного указан СНИЛС
-              </li>
-              <li class="err__item-decor">
-                ваше интернет-соединение стабильно
-              </li>
-            </ul>
-            <p>И повторите попытку</p>
-          </div>
+        <div class="err__decor-nodata">
+          <p>Возникла ошибка при регистрации согласия.</p>
+          <p>Пожалуйста, убедитесь, что:</p>
+          <ul class="err__list-decor">
+            <li class="err__item-decor">все поля заполнены корректно</li>
+            <li class="err__item-decor">
+              ваша учётная запись имеет уровень "полная"
+            </li>
+            <li class="err__item-decor">
+              в личном кабинете на mos.ru в разделе "Семья и дети"
+              подтвержено родство с вашим ребенком или подопечным
+            </li>
+            <li class="err__item-decor">
+              в учётной записи ребенка или подопечного указан СНИЛС
+            </li>
+            <li class="err__item-decor">
+              ваше интернет-соединение стабильно
+            </li>
+          </ul>
+          <p>И повторите попытку</p>
         </div>
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #2</span>
         <p>
           Такой тип ошибки возникает, когда у родителя нет или не полностью
           заполнена информация о ребёнке.
         </p>
         <p>Что нужно сделать:</p>
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #3</span>
         <p>
           Родителю, который будет подтверждать разрешение на биометрию,
           необходимо зайти на портал мэра москвы
           <a href="http://mos.ru" target="_blank">mos.ru</a>
         </p>
-      </li>
-      <li class="list-group">
-        Нажать на иконку человечка в верхнем правом углу.
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #4</span>
+        <p>
+          Нажать на иконку человечка в верхнем правом углу.
+        </p>
         <img class="list-img image" src="./images/helpme/log_mosru.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #5</span>
         <p>
           Авторизуйтесь под учётной записью родителя, который будет
           подтверждать биометрию.
@@ -485,58 +437,88 @@
           может использоваться почта и СНИЛС и ваш личный пароль.
         </p>
         <img class="list-img image" src="./images/helpme/001.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #6</span>
         <p>
           Если не помните пароль. Воспользуйтесь кнопкой восстановить пароль
         </p>
+        <img class="list-img image" src="./images/helpme/014.webp" alt="Скриншот с сайта мэра." />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #7</span>
         <p>Укажите телефон и вашу фамилию</p>
+        <span class="commentText">(Телефон можно указывать как с +7, так и 8 - разницы нет)</span>
+        <img class="list-img image" src="./images/helpme/015.webp" alt="Скриншот с сайта мэра." />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #8</span>
         <p>
           Вам придёт код на телефон, послее вода кода, система прдложит
           создать новый пароль.
         </p>
-        <p>Если вы не помните, какой номер и почта используются для входа?</p>
+        <span class="commentText">Если код не приходит: 1. Проверьте связь. 2. Есть вероятность, что номер с которого
+          приходят СМС находится у вас в Чёрном списке. Зайдите на телефону в СМС и проверьте в настройках.</span>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #9</span>
+        <p>Не помните, какой номер телефона использовали или какую электронную почту?</p>
         <p>
-          А так же если вы не уверены, что у вас вообще есть учётная запись?
+          Не уверены, что у вас есть учётная запись на портале?
         </p>
         <p>Выполните следующее:</p>
         <ol>
           <li>Нажать кнопку восстановить пароль.</li>
-          <li>Указать СНИЛС.</li>
-          <li>Указать вашу фамилию.</li>
-          <li>Нажать кнопку восстановить.</li>
+          <li>Укажите СНИЛС.</li>
+          <li>Укжите вашу фамилию.</li>
+          <li>Нажмите кнопку восстановить.</li>
         </ol>
         <p>
           Если вы есть в системе, на экране вы увидите подсказки в виде
           телефона и электронной почты, которые привязаны к указанному СНИЛС.
         </p>
         <p>
-          Если ниаких данных не найдётся, значит необходимо зарегистрироваться
-          на портале мэра москвы
-          <a href="http://mos.ru" target="_blank">mos.ru</a>
+          Если ниаких данных не нашлось, значит необходимо зарегистрироваться <a href="http://mos.ru"
+            target="_blank">mos.ru</a>
         </p>
-      </li>
-      <li class="list-group">
+        <img class="" src="" alt="" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #10</span>
         <p>
-          После успешной авторизации, вновь нажмите на иконку человечка в
+          После успешной авторизации, вновь необходимо нажать на иконку человечка в
           верхнем правом углу.
         </p>
         <img class="list-img image" src="./images/helpme/002.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #11</span>
         <p>Откроется выпадающее окно.</p>
         <p>Нажмите на ссылку Документы и данные.</p>
         <img class="list-img image" src="./images/helpme/003.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
-        <p>После перехода на новую страницу нажмите на кнопку Документы.</p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #12</span>
+        <p>Будет совршён автоматический переход на новую страницу, нажмите на кнопку <span
+            class="accentText">Документы</span>.</p>
         <img class="list-img image" src="./images/helpme/004.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
-        <p>Выберете раздел Семья и дети.</p>
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #13</span>
+        <p>Выберать раздел <span class="accentText">Семья и дети.</span></p>
         <img class="list-img image" src="./images/helpme/005.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #14</span>
         <p>Обращаю ваше внимание!</p>
         <p>
           Если никакой информации о ребёнке, для которого создаётся
@@ -551,8 +533,10 @@
           сверяйтесь с инструкцией ниже.
         </p>
         <img class="list-img image" src="./images/helpme/006.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #15</span>
         <p>
           В подсвеченной красным цветом области, отображается текущее
           состояние записи о ребёнке.
@@ -580,12 +564,16 @@
           </li>
         </ol>
         <img class="list-img image" src="./images/helpme/007.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #16</span>
         <p>В этом разделе указывается родство.</p>
         <img class="list-img image" src="./images/helpme/008.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #17</span>
         <p>
           Заполнить поля, как указано в бумажном свидительстве о рождении.
         </p>
@@ -594,8 +582,10 @@
         </p>
         <p>Никаких дополнений¸ но и упускать ничего не стоит.</p>
         <img class="list-img image" src="./images/helpme/009.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #18</span>
         <p>Внимание!</p>
         <p>
           Пример описанный здесь обязателен к заполнкению. Не пропускайте его.
@@ -618,12 +608,16 @@
           свидетельство о рождениию
         </p>
         <img class="list-img image" src="./images/helpme/010.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #19</span>
         <p>Укажите СНИЛС</p>
         <img class="list-img image" src="./images/helpme/011.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #20</span>
         <p>
           После прохождения весх проверок, личная карточка ребёнка получит 4
           зелёных галочки.
@@ -631,20 +625,26 @@
         <p>Данные галочки говорят, что всё сделано правильно.</p>
         <p>
           Если, какая либо из галочек не стоит, значит не выполнено одно из
-          условий. Пройдитесь по списку ещё раз.
+          условий. Необходимо пройти по списку ещё раз.
         </p>
         <img class="list-img image" src="./images/helpme/012.webp" alt="Скриншот с сайта мэра." />
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #21</span>
         <p>Сохраните введённые вами даные, нажав на кнопку сохранить.</p>
         <p>Внимательно проверьте поставленные вами галочки.</p>
         <img class="list-img image" src="./images/helpme/013.webp" alt="Скриншот с сайта мэра." />
-      </li>
-    </ul>
+      </div>
+
+    </details>
 
     <!--ОШИБКА 500-->
-    <ul class="list visible" data-errorItem="2">
-      <li class="list-group">
+    <details class="card">
+      <summary class="card__title error-icon">Типовая ошибка: 500</summary>
+
+      <div class="record warning">
+        <span class="record__id">запись: #1</span>
         <div class="err err500">
           <h3 class="err__title">
             500
@@ -653,8 +653,10 @@
           <p class="err__subtitle">По какой-то причине мы не можем сейчас отобразить эту страницу.</p>
           <img class="imgErr500" src="./images/helpme/err500.webp" alt="Картинка ошибки 500 с сайта mos.ru">
         </div>
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #2</span>
         <p>Этот вид ошибки возникает при попытке выдать разрешение на полчение биометри.</p>
         <p>Означает, что сервер не смог выполнить ваш запрос.</p>
         <ul class="sub-list">
@@ -670,18 +672,79 @@
             система выдаёт ошибку.</li>
         </ul>
         <p>Замечено, что чаще всего от этой ошибки страдают владельцы iPhone</p>
-      </li>
-      <li class="list-group">
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #3</span>
         <p>1. Неообходимо проверить наличие интернета</p>
         <p>2. Проверить не включен ли VPN</p>
         <p>3. Проверить какой регион выбран в настройках. Зарубежные сервисы блокируют доступ к государственным сайтам
           России.</p>
         <p>4. Воспользоваться браузером, который поддерживает российские сервисы. Yandex-браузер</p>
         <p>5. Воспользоваться ноутбуком или компьютером.</p>
-      </li>
-    </ul>
+      </div>
+    </details>
 
+    <!--ЛайфХак QR-Code-->
+    <details class="card">
+      <summary class="card__title lifehaker-icon">ЛайфХак - вход по QR-коду</summary>
+
+      <div class="record warning">
+        <span class="record__id">запись: #1</span>
+        <p>Ситуция.</p>
+        <p>Вы забыли карточку.</p>
+        <img class="list-img image" src="./images/noproblem.jpg" alt="Картинка с надписью Без проблем" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #2</span>
+        <p>Отркываем приложение Мой id</p>
+        <p>Авторизуемся с помощью логина или пароля от дневника.</p>
+        <img class="list-img image" src="./images/android/007.jpg" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #3</span>
+        <p>На главном рабочем столе нажать на кнопку меню.</p>
+        <img class="list-img image" src="./images/lifehack/001.webp" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #4</span>
+        <p>В разделе <span class="accentText">управление документами</span> перейдите во вкладку <span
+            class="accentText">сервисы</span></p>
+        <img class="list-img image" src="./images/lifehack/002.webp" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #5</span>
+        <p>Установите флажок напротив раздела <span class="accentText">Московёнок</span>
+        <p>Вернитесь на гланую страницу</p>
+        <img class="list-img image" src="./images/lifehack/003.webp" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #6</span>
+        <p>Теперь на голавной странице у вас появился раздел с виртуальной картой Московёнок</p>
+        <img class="list-img image" src="./images/lifehack/004.webp" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #7</span>
+        <p>Нажмите на раздел и у вас откроется QR-code с виртуальной картой Московёнок.</p>
+        <p>Поднесите его к считывателю турникета</p>
+        <img class="list-img image" src="./images/lifehack/005.webp" alt="Снимок экрана телефона приложение Мой id" />
+      </div>
+
+      <div class="record">
+        <span class="record__id">запись: #8</span>
+        <p>Поднесите его к считывателю турникета</p>
+        <img class="list-img image" src="./images/lifehack/turniket.webp" alt="Фотография турникета с обозначенным местом для QR-code" />
+      </div>
+
+    </details>
   </main>
+  <script src="./js/android.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
